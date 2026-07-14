@@ -1,0 +1,38 @@
+name: module_12
+description: "A new Flutter project optimized for Taskly App."
+# Ngăn chặn việc vô tình xuất bản gói lên pub.dev
+publish_to: 'none'
+
+# Phiên bản và số hiệu bản dựng ứng dụng
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.12.0
+
+# Khai báo các thư viện phụ thuộc phục vụ dự án
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Thư viện hỗ trợ Icon iOS phong cách Cupertino
+  cupertino_icons: ^1.0.8
+
+  # Thư viện Quản lý trạng thái tối ưu hóa Rebuild cho danh sách (Task 12.1)
+  provider: ^6.1.5+1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # Bộ quy tắc phân tích mã nguồn Flutter tiêu chuẩn
+  flutter_lints: ^6.0.0
+
+# Phần cấu hình tài nguyên và đặc tính riêng của Flutter
+flutter:
+
+  # Đảm bảo tích hợp bộ phông chữ Material Icons mặc định
+  uses-material-design: true
+
+  # Đăng ký hình ảnh Logo đã được tối ưu hóa kích thước (Task 12.2)
+  assets:
+    - assets/images/app_logo.png
